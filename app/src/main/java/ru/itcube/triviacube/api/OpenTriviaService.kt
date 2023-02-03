@@ -12,7 +12,7 @@ interface OpenTriviaService {
     @GET("api.php")
     fun getQuestions(
         @Query("amount") amount:Int,
-        @Query("category") category:Int,
+        @Query("category") category:String,
         @Query("difficulty") difficulty:String,
         @Query("type") type:String
     ):Call<OpenTriviaResponse>

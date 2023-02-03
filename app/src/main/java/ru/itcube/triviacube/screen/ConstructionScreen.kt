@@ -107,7 +107,7 @@ fun ConstructionScreen(navController: NavController){
             modifier = Modifier.padding(10.dp),
             fontSize = 30.sp)
         val type = remember {
-            mutableStateOf("any type")
+            mutableStateOf("any Type")
         }
         SingleChoiceList(
             list = listOf(
