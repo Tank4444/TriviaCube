@@ -5,6 +5,6 @@ import androidx.compose.runtime.Composable
 import androidx.navigation.NavController
 
 @Composable
-fun quizScreen(navController: NavController){
+fun QuizScreen(navController: NavController){
     Text(text = "Quiz screen")
 }

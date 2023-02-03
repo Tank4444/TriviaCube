@@ -1,13 +1,10 @@
 package ru.itcube.triviacube.navigation
 
 import androidx.compose.runtime.Composable
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
-import ru.itcube.triviacube.screen.constructionScreen
-import ru.itcube.triviacube.screen.helloScreen
-import ru.itcube.triviacube.screen.quizScreen
+import ru.itcube.triviacube.screen.*
 
 @Composable
 fun NavGraph(navController: NavHostController){
@@ -15,13 +12,13 @@ fun NavGraph(navController: NavHostController){
         navController = navController,
         startDestination = Screens.Hello.route ){
         composable(route = Screens.Hello.route){
-            helloScreen(navController)
+            HelloScreen(navController)
         }
         composable(route = Screens.Construction.route){
-            constructionScreen(navController)
+            ConstructionScreen(navController)
         }
         composable(route = Screens.Quiz.route){
-            quizScreen(navController)
+            QuizScreen(navController)
         }
     }
 }

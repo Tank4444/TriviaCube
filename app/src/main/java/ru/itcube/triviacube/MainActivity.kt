@@ -47,6 +47,8 @@ fun screen(){
             )
         },
         content = {
+
+
             val navController = rememberNavController()
             NavGraph(navController = navController)
         }

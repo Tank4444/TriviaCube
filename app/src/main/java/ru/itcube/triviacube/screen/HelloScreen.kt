@@ -16,7 +16,7 @@ import ru.itcube.triviacube.navigation.Screens
 
 
 @Composable
-fun helloScreen(
+fun HelloScreen(
     navController: NavController
 ){
     Column(modifier = Modifier.fillMaxSize(),
@@ -34,7 +34,7 @@ fun helloScreen(
 
 @Preview(showBackground = true)
 @Composable
-fun helloScreenPreview(){
+fun HelloScreenPreview(){
 
-    helloScreen(rememberNavController())
+    HelloScreen(rememberNavController())
 }
